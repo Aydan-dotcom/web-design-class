@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lindbergh Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        img {height: 350px; width: 250px;}
+        .mySlides {display:none;}
+    </style>
+</head>
+<body>
+    <div class="w3-container w3-auto w3-center">
+        <h1>Lindbergh Building</h1>
+    </div>
+
+<div class="w3-content w3-display-container" style="max-width:500px">
+    <div class="w3-display-container mySlides w3-text-purple w3-xlarge">
+        <img src="lindbergh/img1.jpg" alt="Lindbergh Building Enterance" style="width:100%">
+        <div class="w3-display-bottom w3-center w3-large w3-container w3-padding-12 w3-black">
+            <h3>Lindbergh Main Enterance</h3>
+        </div>
+    </div>
+    <div class="w3-display-container mySlides w3-text-purple w3-xlarge">
+        <img src="lindbergh/img2.jpg" alt="Lindbergh Building Long Staircase" style="width:100%">
+        <div class="w3-display-bottom w3-center w3-large w3-container w3-padding-12 w3-black">
+            <h3>Lindbergh Long Staircase</h3>
+        </div>
+    </div>
+    <div class="w3-display-container mySlides w3-text-purple w3-xlarge">
+        <img src="lindbergh/img3.jpg" alt="Lindbergh Building Band Room" style="width:100%">
+        <div class="w3-display-bottom w3-center w3-large w3-container w3-padding-12 w3-black">
+            <h3>Lindbergh Band Room</h3>
+        </div>
+    </div>
+    <div class="w3-display-container mySlides w3-text-purple w3-xlarge">
+        <img src="lindbergh/img4.jpg" alt="Lindbergh Building BackStage Room" style="width:100%">
+        <div class="w3-display-bottom w3-center w3-large w3-container w3-padding-12 w3-black">
+            <h3>Lindbergh Backstage</h3>
+        </div>
+    </div>
+    <div class="w3-display-container mySlides w3-text-purple w3-xlarge">
+        <img src="lindbergh/img5.jpg" alt="Lindbergh Building Front View" style="width:100%">
+        <div class="w3-display-bottom w3-center w3-large w3-container w3-padding-12 w3-black">
+            <h3>Lindbergh Building Outside</h3>
+        </div>
+    </div>
+    <div class="w3-display-container mySlides w3-text-purple w3-xlarge">
+        <img src="lindbergh/img6.jpg" alt="Lindbergh Theater Room" style="width:100%">
+        <div class="w3-display-bottom w3-center w3-large w3-container w3-padding-12 w3-black">
+            <h3>Lindbergh Theater</h3>
+        </div>
+    </div>
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!-- CHANGE FOOTER-->
+<footer>
+    <div class="w3-center">
+        <h3>Aydan Meyer 2025</h3>
+    <div>
+</footer>
+</body>
+</html>
